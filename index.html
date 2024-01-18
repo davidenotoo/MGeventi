@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG - Audio Video e Luci</title>
+    <style>
+        /* Font titolo */
+        @import url(https://db.onlinewebfonts.com/c/db8811fcaea2386d4f6e3bcf7e6d206b?family=Miedinger+W01+Bold);
+
+
+        /* DESKTOP */
+        @media (min-width: 768px) {
+            body {
+                background-image: url('photo/back_1_pc.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        }
+
+
+        /* SMARTPHONE */
+        @media (max-width: 767px) {
+            body {
+                background-image: url('photo/background_phone.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        }
+
+        body {}
+
+        .cent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            font-family: "Miedinger W01 Bold";
+            font-size: 25px;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <h1 class="title cent">MG - Audio Video e Luci</h1>
+
+
+    <!-- VIDEO -->
+    <video src="video/IMG_5706.MOV" class="video" autoplay muted playsinline loop preload="auto"></video>
+
+
+    <!-- CAROSELLO -->
+
+
+    <!-- FOOTER -->
+</body>
+
+</html>
