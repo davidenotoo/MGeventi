@@ -23,16 +23,24 @@
                 background-size: 100% 100%;
             }
 
-            .carousel {
-                width: 80%;
-                height: 60%;
-                margin: auto;
+            /* HEADER */
+            .logo {
+                max-width: 10%;
+                height: auto;
             }
 
-            .carousel-container {
-                max-width: 80%;
-                margin: auto;
-                overflow: hidden;
+            /* TESTI */
+            .testo1,
+            .testo2 {
+                color: #ffffff;
+                margin-left: 25%;
+                margin-right: 25%;
+                font-size: large;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 4vh;
             }
         }
 
@@ -46,16 +54,24 @@
                 background-size: 100% 100%;
             }
 
-            .carousel {
-                width: 95%;
-                height: 60%;
-                margin: auto;
+            /* HEADER */
+            .logo {
+                max-width: 45%;
+                height: auto;
             }
 
-            .carousel-container {
-                max-width: 95%;
-                margin: auto;
-                overflow: hidden;
+            /* TESTI */
+            .testo1,
+            .testo2 {
+                color: #ffffff;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: large;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 4vh;
             }
         }
 
@@ -68,34 +84,14 @@
             text-align: center;
         }
 
-        /* HEADER */
-        .title {
-            font-family: "Miedinger W01 Bold";
-            font-size: 25px;
-            padding-top: 10vh;
-            color: #ffffff;
-        }
 
         /* VIDEO */
         .video {
-            margin-top: 8vh;
+            margin-top: 5vh;
             margin-bottom: 8vh;
             width: 90%;
             height: 90%;
             border-radius: 18px;
-        }
-
-        /* TESTI */
-        .testo1,
-        .testo2 {
-            color: #ffffff;
-            margin-left: 25%;
-            margin-right: 25%;
-            font-size: large;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
         }
 
         .testo1 {
@@ -103,12 +99,11 @@
         }
 
         .testo2 {
-            margin-top: 5vh;
             margin-bottom: 5vh;
         }
 
         /* CAROSELLO */
-        .carousel-item img {
+        /* .carousel-item img {
             max-width: 100%;
             height: auto;
             display: block;
@@ -120,6 +115,13 @@
         .carousel-control-next {
             background-color: rgba(0, 0, 0, 0.2);
             font-size: 24px;
+        } */
+
+        /* IMMAGINI */
+        .gallery {
+            margin-bottom: 8vh;
+            max-width: 90%;
+            height: auto;
         }
 
         /* FOOTER */
@@ -136,7 +138,10 @@
 
 
     <!-- NAVBAR -->
-    <h1 class="title cent">MG - Audio Video e Luci</h1>
+    <div class="d-flex justify-content-center">
+        <img class="logo" src="photo/loghi/logo.png" alt="">
+    </div>
+
 
 
     <!-- VIDEO -->
@@ -151,17 +156,13 @@
 
     <!-- TESTO1 -->
     <div class="testo1 ">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fugit totam, nostrum, odit nobis
-            exercitationem culpa ipsa iste quam ipsum ad, explicabo hic? Doloribus, voluptates consequuntur. Pariatur
-            eius hic deleniti!
+        <h3>
+            Benvenuti in MG audio video e luci, azienda che da anni si occupa di allestimenti per eventi trasformandoli
+            in un'esperienza indimenticabile.
             <br><br>
-
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, molestiae doloribus! Atque culpa quas
-            molestias nam delectus incidunt sed, suscipit sint explicabo distinctio et soluta harum maiores ut. Autem,
-            beatae?
-
-        </p>
+            Ci dedichiamo alla progettazione e all'esecuzione di eventi,offrendo
+            servizi audio, video e luci di alta qualità.
+        </h3>
     </div>
 
     <!-- TESTO2 -->
@@ -171,72 +172,43 @@
     </div>
 
 
-
-    <!-- CAROSELLO -->
-    <div class="carousel-container">
-
-
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="photo/1.jpg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/2.jpg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="photo/3.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="photo/4.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/5.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/6.jpg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/7.jpg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/8.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-
-                <!-- <div class="carousel-item">
-                    <img src="photo/9.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div> -->
-
-                <div class="carousel-item">
-                    <img src="photo/10.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/11.JPG" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/12.jpg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-                <div class="carousel-item">
-                    <img src="photo/13.jpeg" class="d-block w-100" alt="il tuo browser non supporta l'immagine">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <!-- IMMAGINI -->
+    <div class="cent">
+        <img src="photo/1.jpg" class="img-fluid gallery" alt="img1">
+        <div class="testo2">
+            <h3>Siamo appassionati di ogni dettaglio, dalla nitidezza del suono alla perfezione
+                dell'illuminazione.</h3>
         </div>
+        <img src="photo/2.jpg" class="img-fluid gallery" alt="img2">
+        <img src="photo/3.jpeg" class="img-fluid gallery" alt="img3">
+        <img src="photo/4.jpeg" class="img-fluid gallery" alt="img4">
+        <img src="photo/5.jpeg" class="img-fluid gallery" alt="img5">
+        <div class="testo2">
+            <h3>Garantiamo un impatto visivo e sonoro straordinario per qualsiasi tipo di evento, che sia un
+                matrimonio, una conferenza aziendale, un concerto o un evento privato.</h3>
+        </div>
+        <img src="photo/6.jpg" class="img-fluid gallery" alt="img5">
+        <img src="photo/7.jpg" class="img-fluid gallery" alt="img5">
+        <div class="testo2">
+            <h3>Il nostro team di esperti tecnici e designer collabora strettamente con i clienti per capire le loro
+                visioni e trasformarle in realtà.</h3>
+        </div>
+        <img src="photo/8.jpeg" class="img-fluid gallery" alt="img5">
+        <img src="photo/9.jpeg" class="img-fluid gallery" alt="img5">
+        <div class="testo2">
+            <h3> La nostra attenzione al cliente, la professionalità e la precisione nell'esecuzione ci rendono la
+                scelta
+                preferita per coloro che cercano un servizio completo ed impeccabile per gli allestimenti degli eventi.
+            </h3>
+        </div>
+        <img src="photo/10.jpeg" class="img-fluid gallery" alt="img5">
+        <img src="photo/11.JPG" class="img-fluid gallery" alt="img5">
+        <img src="photo/12.jpg" class="img-fluid gallery" alt="img5">
+        <img src="photo/13.jpeg" class="img-fluid gallery" alt="img5">
     </div>
 
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br>
     <!-- FOOTER -->
 
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -268,7 +240,7 @@
                 <a href="" class="me-4 text-reset">
                     <i class="fab fa-github"></i>
                 </a>
-            </div>
+            </div>;
             <!-- Right -->
         </section>
         <!-- Section: Social media -->
@@ -291,54 +263,15 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-
-                    <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                    </div>
-
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">?</a>
-                        </p>
-                    </div> -->
-
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> Via dalle palle 69, 91011 Alcamo TP</p>
+                        <p><i class="fas fa-home me-3"></i> Via delle Camelie 36, Alcamo TP</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             info@mg.com
                         </p>
                         <p><i class="fas fa-phone me-3"></i> +39 345 284 8467</p>
-                        <p><i class="fas fa-print me-3"></i> +39 345 284 8467</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -350,7 +283,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright:
-            <a class="text-reset fw-bold" href="..." disable>MG Audio Video e Luci</a>
+            <a class="text-reset fw-bold" href="..." onclick="return false">MG Audio Video e Luci</a>
         </div>
         <!-- Copyright -->
     </footer>
