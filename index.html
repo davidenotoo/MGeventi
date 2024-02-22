@@ -187,10 +187,15 @@
         <h2>Audio-Video-Luci</h2>
     </div>
 
+    <!-- VIDEO -->
+    <div class="cent" id="videoContainer"></div>
+
+
+
     <!-- VIDEO desktop -->
-    <div class="cent ">
+    <!-- <div class="cent ">
         <video src="video/IMG_5706.MOV" class="video videoDesktop" autoplay muted playsinline loop preload="auto" controls></video>
-    </div>
+    </div> -->
 
     <!-- VIDEO SmartPhone -->
     <!-- <div class="cent ">
@@ -344,17 +349,24 @@
 
 
         <!-- SCRIPT per nascondere i video -->
-        <!-- <script>
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            var videoDesktop = document.querySelector('.videoDesktop');
-            var videoPhone = document.querySelector('.videoPhone');
+        <script>
+            // JavaScript per inserire il video in base alla larghezza della finestra
+            var videoContainer = document.getElementById('videoContainer');
     
-            if (isMobile) {
-                videoDesktop.style.display = 'none';
+            // Verifica la larghezza della finestra
+            var windowWidth = window.innerWidth;
+    
+            // Definisci i percorsi dei video per desktop e telefono
+            var desktopVideoPath = 'video/IMG_5706.MOV';
+            var mobileVideoPath = 'video/VideoVerticale.mp4';
+    
+            // Aggiungi il video corretto al contenitore in base alla larghezza della finestra
+            if (windowWidth <= 768) {
+                videoContainer.innerHTML = '<video src="' + mobileVideoPath + '" class="video" autoplay muted playsinline loop preload="auto" controls></video>';
             } else {
-                videoPhone.style.display = 'none';
+                videoContainer.innerHTML = '<video src="' + desktopVideoPath + '" class="video" autoplay muted playsinline loop preload="auto" controls></video>';
             }
-        </script> -->
+        </script>
 </body>
 
 </html>
