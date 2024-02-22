@@ -362,7 +362,7 @@
     
             // Aggiungi il video corretto al contenitore in base alla larghezza della finestra
             if (windowWidth <= 768) {
-                videoContainer.innerHTML = '<video src="' + mobileVideoPath + '" class="video" muted playsinline loop preload="auto" controls></video>';
+                videoContainer.innerHTML = '<video src="' + mobileVideoPath + '"  type="video/mp4" class="video" autoplay muted playsinline loop preload="auto" controls></video>';
             } else {
                 videoContainer.innerHTML = '<video src="' + desktopVideoPath + '" class="video" autoplay muted playsinline loop preload="auto" controls></video>';
             }
